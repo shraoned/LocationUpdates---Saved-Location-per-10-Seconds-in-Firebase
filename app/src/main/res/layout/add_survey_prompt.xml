@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/rounded_edittext">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="@string/add_survey_detail"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"/>
+
+    <EditText
+        android:id="@+id/enterName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/enter_name"
+        android:textColorHint="@color/red"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_edittext">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/enter_mobile_number"
+        android:inputType="phone"
+        android:textColorHint="@color/red"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_edittext" />
+
+    <EditText
+        android:id="@+id/orgName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/enter_org_name"
+        android:textColorHint="@color/red"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_edittext" />
+
+    <Spinner
+        android:id="@+id/orgType"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:entries="@array/orgType"
+        android:hint="@string/enter_org_name"
+        android:prompt="@string/select_org_type"
+        android:textColorHint="@color/red"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_edittext" />
+
+    <EditText
+        android:id="@+id/orgAddress"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/enter_address"
+        android:textColorHint="@color/red"
+        android:textStyle="bold"
+        android:inputType="textCapSentences|textMultiLine"
+        android:maxLines ="4"
+        android:maxLength ="2000"
+        android:scrollHorizontally="false"
+        android:background="@drawable/rounded_edittext"/>
+
+    <ImageButton
+        android:id="@+id/photo"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:src="@drawable/photo_icon"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
